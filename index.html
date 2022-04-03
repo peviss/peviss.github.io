@@ -12,7 +12,6 @@
 </head>
 
 <body class="center">
-
   <section id="header" class="full-height">
     <header>
       <nav class="navbar">
@@ -28,15 +27,8 @@
             <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
       </nav>
     </header>
-    <!-- <video src="assets/videos/bg-header-2.mp4" lazy autoplay loop playsinline muted>
-    </video> -->
     
     <div class="header center" >
       <div class="header-title animate__animated animate__fadeInLeft">
@@ -44,7 +36,6 @@
           Pedro Vissillac
         </h1>
         <h3>Full-stack developer</h3>
-        <!-- <div class="langs"><span></span></div> -->
       </div>
       <div class="header-image center">
         <div class="image-container center animate__animated animate__rotateIn">
@@ -55,9 +46,6 @@
     <div class="video-overlay"></div>
     <div id="particles-js"></div>
     </div>
-
-
-
   </section>
 
   <section id="about" class="full-height">
@@ -69,9 +57,9 @@
       </div>
 
       <div class="container-body">
-        <div class="about-image">
-          <img src="/assets/icons/pedro-glitch.gif" alt="">
-        </div>
+        <!-- <div class="about-image">
+          <img src="" alt="">
+        </div> -->
         <div class="container-body-left center">
           <div class="text-container">
             <p class="center">
@@ -83,9 +71,6 @@
           </div>
         </div>
       </div>
-
-
-
     </div>
   </section>
 
@@ -96,7 +81,6 @@
           Work
         </h2>
       </div>
-
       <div class="container-body center animate__animated animate__fadeIn">
         <div class="work-text-container">
           <div class="work-text-item">
@@ -115,12 +99,8 @@
             <a href="https://github.com/peviss/python-face-recognition">See more</a>
           </div>
         </div>
-        <!-- <div class="work-image">
-          <img src="/assets/icons/work.gif" alt="work">
-        </div> -->
       </div>
     </div>
-
   </section>
 
   <section id="contact" class="full-height">
@@ -132,11 +112,6 @@
       </div>
       <div class="container-body">
         <div class="contact-container">
-          <!--<div class="work-text-item">
-            <h3>Email</h3>
-            <a href="">pedrovissillac@gmail.com</a>
-          </div>-->
-
           <div class="work-text-item">
             <h3>LinkedIn</h3>
             <a href="https://www.linkedin.com/in/pedrovissillac">linkedin.com/in/pedrovissillac</a>
@@ -146,22 +121,19 @@
             <a href="https://www.github.com/peviss">github.com/peviss</a>
           </div>
         </div>
-
         <div class="work-image">
           <img src="/assets/icons/work.gif" alt="work">
         </div>
-
       </div>
       <div class="center">
-        <a href="">Pedro Vissillac © 2021</a>
+        <a id="copy" href="#">Pedro Vissillac ©</a>
       </div>
     </div>
   </section>
 
-
-
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="js/app.js"></script>
+  <script>document.querySelector("#copy").textContent += ` ${new Date().getFullYear()}`</script>
 </body>
 
 </html>
